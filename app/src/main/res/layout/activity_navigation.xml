@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation"
+
+    >
+
+    <!-- Spinner for selecting start location -->
+    <Spinner
+        android:id="@+id/start_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Spinner for selecting destination location -->
+    <Spinner
+        android:id="@+id/destination_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_spinner"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Button to start navigation -->
+    <Button
+        android:id="@+id/start_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/destination_spinner"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#C2E09E"
+        android:text="Find Path" />
+
+    <!-- Custom view for the store layout and path visualization -->
+    <ImageView
+        android:id="@+id/store_map_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/start_navigation"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/store_map" />
+
+
+    <ImageView
+        android:id="@+id/moving_marker"
+        android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:src="@drawable/img"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:layout_marginTop="640dp"
+        android:backgroundTint="#C2E09E"
+        android:id="@+id/homebutton"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to List"
+        android:layout_toRightOf="@+id/homebutton"
+        android:layout_marginLeft="100dp"
+        android:backgroundTint="#C2E09E"
+        android:layout_marginTop="640dp"
+        android:id="@+id/listbutton"
+        />
+
+</RelativeLayout>

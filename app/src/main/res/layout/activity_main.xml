@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+
+
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:src="@drawable/shopmate"
+        android:layout_marginTop="30dp"
+        android:id="@+id/logo"
+        />
+
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColor="@color/black"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <!-- Email for signup -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_below="@id/username"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/email"
+        android:layout_marginTop="16dp"/>
+
+
+    <TextView
+        android:id="@+id/passwordStrengthTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        />
+
+    <!-- Birthdate Picker for signup -->
+    <Button
+        android:id="@+id/birthdateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Birthdate"
+        android:layout_below="@id/password"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:backgroundTint="#C2E09E"/>
+
+
+    <!-- Selected birthdate (Invisible in login mode) -->
+    <TextView
+        android:id="@+id/birthdateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/birthdateBtn"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+
+    <!-- Login/Signup Button -->
+    <Button
+        android:id="@+id/loginSignupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/birthdateText"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#C2E09E"
+        />
+
+
+    <!-- Switch to Signup button -->
+    <Button
+        android:id="@+id/switchModeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New User? Sign Up"
+        android:layout_below="@id/loginSignupBtn"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#C2E09E"/>
+
+
+</RelativeLayout>

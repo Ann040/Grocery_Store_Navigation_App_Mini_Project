@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main content of the homepage -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="500dp"
+            android:layout_height="300dp"
+            android:src="@drawable/shopmate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp" />
+
+        <!-- Top Left: Menu icon button -->
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp"
+            android:contentDescription="Menu Icon"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <!-- Top Right: Profile button -->
+        <ImageButton
+            android:id="@+id/profileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Profile"
+            android:src="@drawable/profile"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <!-- Image Button 1: Show Store Map -->
+        <ImageButton
+            android:id="@+id/showMapBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/category"
+            android:contentDescription="Categories"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="60dp" />
+
+        <!-- Text for Button 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@id/showMapBtn"
+            android:layout_marginLeft="60dp" />
+
+        <!-- Image Button 2: Start Shopping -->
+        <ImageButton
+            android:id="@+id/startShoppingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart"
+            android:contentDescription="Start Shopping"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="250dp" />
+
+        <!-- Text for Button 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Shopping"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@id/startShoppingBtn"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+    <!-- Navigation drawer content -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Rate Us Button -->
+            <Button
+                android:id="@+id/rate_us_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate Us"
+                android:backgroundTint="#C2E09E"
+                android:layout_marginTop="300dp" />
+
+            <!-- Contact Us Button -->
+            <Button
+                android:id="@+id/contact_us_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#C2E09E" />
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

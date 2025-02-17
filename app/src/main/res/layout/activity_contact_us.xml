@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <!-- Logo at the top -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:src="@drawable/shopmate"
+        />
+
+    <!-- Developer Names -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APP BY:"
+        android:layout_marginTop="350dp"
+        android:textSize="20dp"
+        />
+    <!-- Developer Names -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOHAM MARATHE"
+        android:layout_marginTop="380dp"
+        />
+    <!-- Developer Names -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MRUNMAYI JADHAV"
+        android:layout_marginTop="400dp"
+        />
+    <!-- Developer Names -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANMOL CHAUHAN"
+        android:layout_marginTop="420dp"
+        />
+
+    <!-- Email ID (Implicit Intent) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL ID:"
+        android:layout_marginTop="470dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sam060618183030@gmail.com"
+        android:layout_marginTop="510dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@android:color/holo_blue_dark"
+        />
+
+    <!-- Contact Us (Implicit Intent for Call) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACT US:"
+        android:layout_marginTop="560dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91 xxxxxxxxxx"
+        android:layout_marginTop="600dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@android:color/holo_blue_dark"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/rateUsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate Us"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/rateUsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We value your feedback. Please rate us below!"
+        android:textSize="16sp"
+        android:layout_below="@id/rateUsTitle"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <RatingBar
+        android:id="@+id/facilityRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/submitRatingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facilityRating"
+        android:layout_marginTop="20dp"
+        android:text="Submit Rating"
+        android:backgroundTint="#C2E09E"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/backh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facilityRating"
+        android:layout_marginTop="500dp"
+        android:text="Home page"
+        android:backgroundTint="#C2E09E"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:text="text"
+        android:gravity="center"
+        />
+</RelativeLayout>
